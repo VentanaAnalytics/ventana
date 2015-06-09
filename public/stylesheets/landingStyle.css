@@ -1,0 +1,345 @@
+@font-face {
+    font-family: "Nexa";
+    src: url("./petbook/fonts/nexa_light.otf");
+}
+
+@font-face {
+    font-family: "Nexa";
+    src: url("./petbook/fonts/nexa_bold.otf");
+    font-weight: bold;
+}
+
+*{
+    color: #000;
+}
+
+a{
+    text-decoration:none;
+}
+
+textarea{
+    resize: none;
+}
+
+h1{
+    font-size: 60px;
+}
+
+ul, li{
+    list-style-type:none;
+}
+
+img.bg {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: -100px;
+    left: 0;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+    img.bg {
+        left: 50%;
+        margin-left: -512px;   /* 50% */
+    }
+}
+
+.req{
+    color: #e74c3c;
+}
+
+.logo-background{
+    height: 293px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 20px;
+}
+
+.img-logo{
+    margin-top: 20px;
+}
+
+.subscribe-background{
+    background: #f5ab35;
+    padding: 10px 15px 10px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.subscribe-button{
+    font-size: 30px;
+    margin-left: -3px;
+}
+
+.count-string{
+    margin-left: -100px;
+    z-index: 2;
+    position: absolute;
+    margin-top: 125px;
+}
+
+.cont-footer{
+    width: 100%;
+    font-size: 18px;
+    margin-top: -40px;
+}
+
+.socmed-link{
+    margin-left: 20px;
+}
+
+.navbar{
+    border-radius: 0;
+    border: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    background: #fff;
+}
+
+.navbar-brand{
+    padding: 3px;
+    height: 80px;
+    padding-left: 15px;
+}
+
+.navbar-toggle{
+    margin-top: 25px;
+}
+
+.btn-petbook{
+    background: #f39c12;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.btn-petbook:hover{
+    background: #e67e22;
+}
+
+@media(max-width:767px){
+    .navbar-default .navbar-nav>li>a>div{
+        color: #58D6F5;
+    }
+
+    .navbar-icon{
+        color: #58D6F5;
+        float: left;
+        font-size: 20px;
+        padding-right: 10px;
+    }
+}
+
+@media(min-width:767px){
+    .navbar-nav li{
+        height: 100%;
+    }
+
+    .navbar-nav>li>a{
+        padding-top: 15px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .navbar-default .navbar-nav>li>a>div{
+        color: #58D6F5;
+    }
+
+    .navbar-icon{
+        color: #58D6F5;
+        font-size: 35px;
+    }
+}
+
+.navbar-default .navbar-nav>li:hover>a,
+.navbar-default .navbar-nav>li>a.active{
+    background: #58D6F5;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li:hover>a>div,
+.navbar-default .navbar-nav>li>a.active>div{
+    color: #fff;
+}
+
+.navbar-divider{
+    background: #58D6F5;
+    height: 5px;
+}
+
+.petbook-footer{
+    background: #ecf0f1;
+    padding: 15px;
+}
+
+@media(min-width:768px){
+    .social-media{
+        padding: 10px;
+        border-left: 1px solid #bdc3c7;
+    }
+    .mailing-list{
+        padding: 10px;
+    }
+}
+
+@media(max-width:768px){
+    .mailing-list{
+        padding: 10px;
+        margin-bottom: 40px;
+    }
+
+    .social-media{
+        padding: 10px;
+        border-top: 1px solid #bdc3c7;
+        padding-top: 20px;
+    }
+}
+
+.mailing-list > span, .social-media > span{
+    color: #000;
+    padding-left: 20px;
+}
+
+.copyright{
+    background: #58D6F5;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+.news-block{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom-width: 7px;
+    margin-bottom: 25px;
+}
+
+.news-block:hover{
+    border-bottom: 7px solid #58D6F5;
+    margin-bottom: 25px;
+}
+
+.news-content{
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+.news-form{
+    margin-top: 30px;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.side-news-divider{
+    background: #58D6F5;
+    height: 2px;
+}
+
+.side-news-content{
+    padding: 20px;
+}
+
+.side-photo{
+    padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+}
+
+
+.center-cropped-lg{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.center-cropped-md{
+    width: 100%;
+    height: 225px;
+    overflow: hidden;
+}
+
+.center-cropped-sm{
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+}
+
+.video-thumb{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    margin: 10px 0px 10px 0px;
+    padding: 0px 10px 10px 10px;
+}
+
+.video-view, .video-view span{
+    color: #bababa;
+}
+
+@media(min-width:768px){
+    .shopping-cart{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        margin: 130px 190px 0px 0px;
+    }
+}
+@media(max-width:768px){
+    .shopping-cart{
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        margin: 150px 10px 0px 0px;
+    }
+}
+
+.product-detail{
+    color: #ababab;
+    font-size: 18px;
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+    height: 30px;
+}
+
+.petbook-form{
+    margin-top: 30px;
+    font-size: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.home-block-content{
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+    position: absolute;
+    top: 120px;
+    width: 85%;
+    height: 130px;
+}
+
+.home-block-title{
+    padding: 3px 10px;
+    background: #58D6F5;
+    position: absolute;
+    top: 110px;
+    color: #fff;
+}
+
+
+/*MEME*/
+.meme-container{
+    padding-right: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.meme-love, .meme-view{
+    width: 20%;
+    float: right;
+    font-size: 25px;
+    text-align: right;
+    margin-top: 10px;
+}
